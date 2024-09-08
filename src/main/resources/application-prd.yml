@@ -15,9 +15,3 @@ eureka:
     fetch-registry: true
   service-url:
     defaultZone: http://discovery-service:8761/eureka
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health, busrefresh, refresh, metrics

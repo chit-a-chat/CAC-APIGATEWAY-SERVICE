@@ -4,3 +4,9 @@ server:
 spring:
   application:
     name: apigateway-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh, refresh, metrics

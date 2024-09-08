@@ -10,8 +10,5 @@ spring:
     import: optional:configserver:http://config-service:8888
 
 eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
   service-url:
     defaultZone: http://discovery-service:8761/eureka

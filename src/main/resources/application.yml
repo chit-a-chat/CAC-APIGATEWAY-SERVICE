@@ -10,3 +10,12 @@ management:
     web:
       exposure:
         include: health, busrefresh, refresh, metrics
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    preferIpAddress: true   # Registers the service using its IP address
+    leaseRenewalIntervalInSeconds: 10
+    leaseExpirationDurationInSeconds: 30

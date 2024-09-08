@@ -5,7 +5,7 @@ spring:
   application:
     name: apigateway-service
     activate:
-      on-profile: local, tst
+      on-profile: local
   config:
     import: optional:configserver:http://localhost:8888
 

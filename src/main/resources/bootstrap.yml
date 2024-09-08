@@ -1,5 +1,7 @@
-  spring:
-    cloud:
-      config:
-        uri: http://127.0.0.1:8888
-        name: apigateway-service
+spring:
+  cloud:
+    config:
+      uri:
+        - http://127.0.0.1:8888
+        - http://config-serivce:8888
+      name: apigateway-service
